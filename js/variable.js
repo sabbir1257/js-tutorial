@@ -8,3 +8,8 @@ var special = "parul akter";
 var age = 10;
 var price = 24;
 var rating = 10;
+
+// boolean type variable
+var serious = true;
+var single = true;
+var married = false;

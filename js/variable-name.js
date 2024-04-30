@@ -30,4 +30,4 @@ var UserName = "Sabbir"  // pascal case
 
 // 6. variable name is case senstive 
 var persion = 10;
-var Persion = 10;
+var Persion = 10; 

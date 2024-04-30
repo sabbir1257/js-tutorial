@@ -11,3 +11,8 @@ var return = true;
 
 // Demo......
 var my home address = "New California";
+
+// 3. variable name can not have quotaion 
+
+// Demo......
+var "name" = "Tom Hanks";

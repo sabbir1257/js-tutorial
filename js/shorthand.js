@@ -25,7 +25,7 @@ price2 -= 5;
 
 var age = 15;
 age = 1 + 1;
-// ++ means adding 1 to the existing 
+// ++ means adding 1 to the existing ...
 age++;
 
 

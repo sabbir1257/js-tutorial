@@ -20,3 +20,12 @@ var isSingle = false ;
  * 6. can not contain dash 
  * 7. should use camelCase 
  **/
+
+// Math Operations: +, -, *, /
+// Shorthand : += , -= , ++, --
+
+// convert: parseInt , parseFloat 
+
+// tofixed 
+
+// remainder : vagses : %

@@ -9,3 +9,6 @@
 // console.log(5 <= 6);
 
 
+// greater than or equal 
+
+// console.log(5 >= 6);

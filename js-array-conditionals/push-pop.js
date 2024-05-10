@@ -8,12 +8,9 @@ friends.push('raidul')
 // console.log(friends);
 
 
-// // use pop to get last element 
-// console.log(numbers);
-// // numbers.pop();
-// var element = numbers.pop();
-// console.log(numbers);
-// console.log(element);
-
-numbers.pop(1)
-console.log()
+// use pop to get last element 
+console.log(numbers);
+// numbers.pop();
+var element = numbers.pop();
+console.log(numbers);
+console.log(element);

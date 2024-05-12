@@ -31,6 +31,10 @@ var cars = 1;
 if (isGraduated === true || salary > 50000 || cars >= 1) {
      console.log('Eso prem kori');
 }
-else{
+else {
      console.log('tomar friend er mobile number dao');
+}
+
+if ((isGraduated === true && salary > 50000) || cars >= 1) {
+
 }

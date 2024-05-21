@@ -16,7 +16,7 @@ while (roastGiven < 10) {
 } */
 
 
-var items = ['bottle', 'mouse', 'sunglass', 'pen', 'notebook'];
+/* var items = ['bottle', 'mouse', 'sunglass', 'pen', 'notebook'];
 
 for(var i = 0; i < items.length ; i++ ){
      var item = items[i];
@@ -24,4 +24,15 @@ for(var i = 0; i < items.length ; i++ ){
           break;
      };
      console.log(item);
+} */
+
+
+var numbers = [45, 87, 89, 56, 32, 51, 25];
+
+for(var i = 0; i < 7 ; i++){
+     var number = numbers[i];
+     if(number == 56){
+          break;
+     }
+     console.log(number);
 }

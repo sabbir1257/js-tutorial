@@ -5,4 +5,4 @@ function add(num1, num2) {
 
 const result1 = add(12, 13);
 const result2 = add(35, 7);
-const finalResult = add(result1 + result2);
+const finalResult = add(result1, result2);

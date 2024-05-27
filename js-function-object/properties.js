@@ -29,4 +29,4 @@ console.log(propertyValue);
 
 // set property values
 shoppingCart.mouse = 15;
-console.log(shoppingCart.mouse);
+console.log(shoppingCart);

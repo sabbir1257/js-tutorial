@@ -8,5 +8,5 @@ function factorial(numbers) {
      return result;
 }
 
-
-console.log(factorial(7));
+const result = factorial(7);
+console.log(result);

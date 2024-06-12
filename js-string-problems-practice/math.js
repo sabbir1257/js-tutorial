@@ -22,7 +22,7 @@ const fullNumber = Math.round(number);
 
 const result1 = Math.ceil(2.0001);
 const result2 = Math.floor(454.246)
-console.log(result2);
+// console.log(result2);
 
 // --------------
 // Random

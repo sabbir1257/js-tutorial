@@ -9,5 +9,5 @@ function reverseString(text){
 }
 
 const myString = 'I am a good Boy';
-const reversed = reverseString(myString); 
-console.log('reversed output: ', reversed);
+const words = reverseString(myString); 
+console.log('reversed output: ', words);

@@ -26,18 +26,27 @@ while (i <= 39) {
 
 // 3 solve
 var even = 412;
-while(even < 456){
+while (even < 456) {
      // console.log(even);
-     even+=2
+     even += 2
 }
 
 
 // 4 solve
 var odd = 581;
 while (odd < 623) {
-     console.log(odd);
-     odd+=2
+     // console.log(odd);
+     odd += 2
 }
 
 
-
+let a = 1;
+while (a < 7) {
+     if (a % 2 == 0) {
+          console.log(a, "is even");
+     }
+     else {
+          console.log(a, 'si odd');
+     }
+     a += 1;
+}

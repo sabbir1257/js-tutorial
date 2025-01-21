@@ -7,10 +7,9 @@ const Country = ({ country, handleVisitedCountry }) => {
 
      const handleVisited = () => {
           setVisited(!visited);
-     }
+     };
 
-     console.log(handleVisitedCountry);
-     
+     const passWhitParams = () => handleVisitedCountry(country);
 
      return (
           <div className={`country ${visited ? 'visited' : 'non-visited'}`}>
@@ -18,7 +17,7 @@ const Country = ({ country, handleVisitedCountry }) => {
                <img src={flags.png} alt="" />
                <p>Population: {population}</p>
                <p>Area: {area}</p>
-               <button>Mark visited</button>
+               <button onClick={passWhitParams}>Mark visited</button>
                <br /><br />
                <p><small>Code: {cca3}</small></p>
                <button onClick={handleVisited}>{visited ? 'Visited' : 'Going'}</button>

@@ -1,33 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useEffect, useState } from 'react'
 import './App.css'
+import Watch from './components/Watch/Watch'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [watches, setWatches] = useState([]);
+
+  /* useEffect(() => {
+    fetch('watches.json')
+    .then(res => res.json())
+    .then(data => setWatches(data))
+  },[]) */
+  useEffect(() => {
+    fetch('https://raw.githubusercontent.com/sabbir1257/watches-data/refs/heads/main/watches.json')
+    .then(res => res.json())
+    .then(data => setWatches(data))
+  },[])
+
+  /* const watches = [
+    { id: 1, name: 'Apple watch', price: 100 },
+    { id: 2, name: 'Samsung watch', price: 200 },
+    { id: 3, name: 'Mi watch', price: 300 },
+  ] */
+
+    /* const watches = [
+      { id: 1, name: "Apple Watch Series 9", price: 399.99 },
+      { id: 2, name: "Samsung Galaxy Watch 6", price: 349.99 },
+      { id: 3, name: "Garmin Venu 2 Plus", price: 449.99 },
+      { id: 4, name: "Fitbit Sense 2", price: 299.95 },
+      { id: 5, name: "Amazfit GTR 4", price: 199.99 }
+    ]; */
+    
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
       <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {
+        watches.map(watch => <Watch watch={watch} key={watch.id}></Watch>)
+      }
     </>
   )
 }

@@ -2,10 +2,11 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import User from '../User/User';
 import './Users.css';
+import PropTypes from 'prop-types';
 
 const Users = () => {
 
-     const users = useLoaderData(); 
+     const users = useLoaderData() || []; 
      console.log(users);
 
      return (
@@ -20,5 +21,18 @@ const Users = () => {
           </div>
      );
 };
+
+Users.propTypes = {
+     users: PropTypes.arrayOf(
+       PropTypes.shape({
+         id: PropTypes.number.isRequired,
+         // Add other user properties here
+       })
+     ),
+   };
+   
+   Users.defaultProps = {
+     users: [],
+   };
 
 export default Users;

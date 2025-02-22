@@ -10,20 +10,21 @@ import Users from './components/Users/Users.jsx'
 
 const router = createBrowserRouter([
   {
-    path:'/',
-    element:<Home/>,
+    path: '/',
+    element: <Home />,
     children: [
       {
         path: '/about',
-        element: <About/>
+        element: <About />
       },
       {
         path: '/contact',
-        element: <Contact/>
+        element: <Contact />
       },
       {
         path: '/users',
-        element: <Users/>
+        loader: () => fetch('https://jsonplaceholder.typicode.com/users'),
+        element: <Users />
       }
     ]
   },
